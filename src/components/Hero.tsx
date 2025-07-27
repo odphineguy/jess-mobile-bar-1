@@ -13,7 +13,7 @@ const Hero = () => {
           {/* Logo */}
           <div className="mb-8 flex justify-center">
             <img 
-              src="/lovable-uploads/45a418f4-0de2-4100-8481-4d185824377b.png" 
+              src="/lovable-uploads/9e9f8ba8-ec6a-489f-a2ab-b061834f47bc.png" 
               alt="Jess's Mobile Bar Logo" 
               className="h-48 w-48 object-contain drop-shadow-2xl hover:drop-shadow-glow transition-smooth transform hover:scale-105"
             />
