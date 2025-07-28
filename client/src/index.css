@@ -1,0 +1,116 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Jess's Mobile Bar Brand Colors */
+  --primary-100: #8B5FBF;
+  --primary-200: #61398F;
+  --primary-300: #FFFFFF;
+  --accent-100: #D6C6E1;
+  --accent-200: #9A73B5;
+  --text-100: #4A4A4A;
+  --text-200: #878787;
+  --bg-100: #F5F3F7;
+  --bg-200: #E9E4ED;
+  --bg-300: #FFFFFF;
+
+  /* Shadcn UI Variables mapped to brand colors */
+  --background: var(--bg-100);
+  --foreground: var(--text-100);
+  --muted: var(--bg-200);
+  --muted-foreground: var(--text-200);
+  --popover: var(--bg-300);
+  --popover-foreground: var(--text-100);
+  --card: var(--bg-300);
+  --card-foreground: var(--text-100);
+  --border: var(--accent-100);
+  --input: var(--accent-100);
+  --primary: var(--primary-100);
+  --primary-foreground: var(--primary-300);
+  --secondary: var(--accent-100);
+  --secondary-foreground: var(--primary-200);
+  --accent: var(--accent-200);
+  --accent-foreground: var(--primary-300);
+  --destructive: hsl(0, 84%, 60%);
+  --destructive-foreground: hsl(60, 9%, 98%);
+  --ring: var(--primary-100);
+  --radius: 0.5rem;
+}
+
+.dark {
+  --background: var(--primary-200);
+  --foreground: var(--primary-300);
+  --muted: #2D1A41;
+  --muted-foreground: var(--accent-100);
+  --popover: var(--primary-200);
+  --popover-foreground: var(--primary-300);
+  --card: var(--primary-200);
+  --card-foreground: var(--primary-300);
+  --border: var(--accent-200);
+  --input: var(--accent-200);
+  --primary: var(--primary-100);
+  --primary-foreground: var(--primary-300);
+  --secondary: var(--accent-200);
+  --secondary-foreground: var(--primary-300);
+  --accent: var(--accent-100);
+  --accent-foreground: var(--primary-200);
+  --destructive: hsl(0, 63%, 31%);
+  --destructive-foreground: hsl(0, 0%, 98%);
+  --ring: var(--primary-100);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Custom gradient backgrounds */
+.purple-gradient {
+  background: linear-gradient(135deg, var(--primary-100) 0%, var(--primary-200) 100%);
+}
+
+.purple-gradient-light {
+  background: linear-gradient(135deg, var(--accent-100) 0%, var(--accent-200) 100%);
+}
+
+/* Hero section styling */
+.hero-overlay {
+  background: linear-gradient(135deg, 
+    rgba(97, 57, 143, 0.8) 0%, 
+    rgba(139, 95, 191, 0.6) 100%);
+}
+
+/* Custom animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+/* Custom button styles */
+.btn-purple {
+  @apply bg-primary hover:bg-primary-foreground hover:text-primary border border-primary transition-all duration-300 transform hover:scale-105;
+}
+
+.btn-purple-outline {
+  @apply bg-transparent border-2 border-primary text-primary hover:bg-primary hover:text-white transition-all duration-300;
+}
