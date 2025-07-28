@@ -1,23 +1,23 @@
 import { Button } from "@/components/ui/button";
 import { ExternalLink } from "lucide-react";
-import drink7 from "@assets/drink7_1753667660054.jpg";
-import drink8 from "@assets/drink8_1753667660054.jpg";
-import drinkMain from "@assets/drink_1753667660044.jpg";
+import drink3 from "@assets/drink3_1753667660053.jpg";
+import drink5 from "@assets/drink5_1753667660053.jpg";
+import drink6 from "@assets/drink6_1753667660054.jpg";
 
 export default function Gallery() {
   const galleryImages = [
     {
-      src: drink7,
+      src: drink3,
       alt: "Professional event bartending setup with elegant bar cart",
       caption: "Event Bartending",
     },
     {
-      src: drink8,
+      src: drink5,
       alt: "Artisanal cocktail preparation with fresh garnishes and premium ingredients",
       caption: "Cocktail Artistry",
     },
     {
-      src: drinkMain,
+      src: drink6,
       alt: "Luxury bar setup with premium spirits and sophisticated glassware",
       caption: "Luxury Setup",
     },
@@ -54,7 +54,7 @@ export default function Gallery() {
           <div className="bg-background rounded-xl p-8 shadow-lg mb-6">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               {/* Instagram post placeholders using uploaded images */}
-              {[drink7, drink8, drinkMain, drink7].map((img, index) => (
+              {[drink3, drink5, drink6, drink3].map((img, index) => (
                 <div key={index} className="aspect-square rounded-lg overflow-hidden">
                   <img 
                     src={img} 
@@ -72,7 +72,7 @@ export default function Gallery() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Button className="btn-purple">
+            <Button className="btn-purple-outline">
               <ExternalLink className="h-4 w-4 mr-2" />
               Follow @mobile_bar_jess
             </Button>

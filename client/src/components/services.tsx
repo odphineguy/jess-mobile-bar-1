@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Lightbulb, Martini, Sparkles } from "lucide-react";
-import drink6 from "@assets/drink6_1753667660054.jpg";
+import drink1 from "@assets/drink1_1753667660044.jpg";
 
 export default function Services() {
   const scrollToContact = () => {
@@ -40,7 +40,7 @@ export default function Services() {
         {/* Header with background image */}
         <div className="relative mb-16 rounded-xl overflow-hidden">
           <img 
-            src={drink6}
+            src={drink1}
             alt="Luxury bar setup with premium spirits and glassware" 
             className="w-full h-64 object-cover"
           />
@@ -71,7 +71,7 @@ export default function Services() {
                   onClick={scrollToContact}
                   className="w-full btn-purple"
                 >
-                  Learn More
+                  Get Quote
                 </Button>
               </CardContent>
             </Card>

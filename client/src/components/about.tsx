@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import drink5 from "@assets/drink5_1753667660053.jpg";
+import drink2 from "@assets/drink2_1753667660052.jpg";
 
 export default function About() {
   const scrollToContact = () => {
@@ -20,7 +20,7 @@ export default function About() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="order-2 lg:order-1">
             <img 
-              src={drink5}
+              src={drink2}
               alt="Professional bartender crafting cocktails with precision" 
               className="rounded-xl shadow-lg w-full h-auto"
             />
@@ -60,7 +60,7 @@ export default function About() {
               onClick={scrollToContact}
               className="btn-purple"
             >
-              LEARN MORE
+              BOOK YOUR EVENT
             </Button>
           </div>
         </div>

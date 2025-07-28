@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import drink3 from "@assets/drink3_1753667660053.jpg";
+import drinkMain from "@assets/drink_1753667660044.jpg";
 
 export default function Hero() {
   const scrollToContact = () => {
@@ -19,7 +19,7 @@ export default function Hero() {
       {/* Hero background image */}
       <div className="absolute inset-0 hero-overlay z-10"></div>
       <img 
-        src={drink3}
+        src={drinkMain}
         alt="Elegant mobile bar setup at luxury event" 
         className="absolute inset-0 w-full h-full object-cover"
       />
@@ -35,9 +35,9 @@ export default function Hero() {
         <Button 
           onClick={scrollToContact}
           size="lg"
-          className="bg-accent hover:bg-accent/90 text-primary font-semibold px-8 py-4 text-lg transition-all duration-300 transform hover:scale-105"
+          className="bg-primary hover:bg-primary-foreground hover:text-primary border-2 border-primary text-white font-bold px-8 py-4 text-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
         >
-          READY TO WORK WITH US?
+          GET YOUR FREE QUOTE
         </Button>
       </div>
     </section>
