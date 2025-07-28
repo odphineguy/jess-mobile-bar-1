@@ -59,11 +59,6 @@ const Hero = () => {
           <div className="flex flex-wrap justify-center items-center gap-6 mb-8 text-primary-foreground/70">
             <div className="flex items-center gap-2">
               <Award className="w-5 h-5" />
-              <span className="text-sm">Licensed & Insured</span>
-            </div>
-            <div className="hidden sm:block w-px h-4 bg-primary-foreground/30"></div>
-            <div className="flex items-center gap-2">
-              <Award className="w-5 h-5" />
               <span className="text-sm">Professional Bartenders</span>
             </div>
             <div className="hidden sm:block w-px h-4 bg-primary-foreground/30"></div>
@@ -89,7 +84,7 @@ const Hero = () => {
               variant="outline" 
               size="lg"
               onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
-              className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary"
+              className="border-primary-foreground text-primary bg-primary-foreground hover:bg-primary-foreground/90"
             >
               <Mail className="w-5 h-5" />
               Get Quote

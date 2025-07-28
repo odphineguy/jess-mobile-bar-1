@@ -74,7 +74,7 @@ const Footer = () => {
         {/* Bottom Section */}
         <div className="border-t border-primary-foreground/20 mt-8 pt-8 text-center">
           <p className="text-primary-foreground/70 flex items-center justify-center gap-2">
-            <span>© 2024 Jess's Mobile Bar. Made with</span>
+            <span>© 2025 Jess's Mobile Bar. Made with</span>
             <Heart className="w-4 h-4 text-primary-light" />
             <span>for unforgettable events.</span>
           </p>
