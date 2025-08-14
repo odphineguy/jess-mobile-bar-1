@@ -1,73 +1,48 @@
-# Welcome to your Lovable project
+# Jess's Mobile Bar
 
-## Project info
+A premium mobile bar service website showcasing elevated cocktail experiences across Los Angeles, Orange County, and the Inland Empire.
 
-**URL**: https://lovable.dev/projects/1b72c280-d57d-4976-af96-4937bab75f7d
+## Features
 
-## How can I edit this code?
+- **Responsive Design**: Optimized for mobile and desktop
+- **Modern UI**: Built with React, TypeScript, and Tailwind CSS
+- **Professional Branding**: Mystical purple theme with elegant design
+- **Contact Integration**: Direct phone and social media links
+- **Service Areas**: Clear coverage information
 
-There are several ways of editing your application.
+## Tech Stack
 
-**Use Lovable**
+- React 18
+- TypeScript
+- Vite
+- Tailwind CSS
+- Shadcn/UI Components
+- React Router
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/1b72c280-d57d-4976-af96-4937bab75f7d) and start prompting.
+## Development
 
-Changes made via Lovable will be committed automatically to this repo.
+```bash
+# Install dependencies
+npm install
 
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Start development server
 npm run dev
+
+# Build for production
+npm run build
+
+# Preview production build
+npm run preview
 ```
 
-**Edit a file directly in GitHub**
+## Deployment
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+This site is automatically deployed to GitHub Pages via GitHub Actions. The site is available at:
+https://odphineguy.github.io/jess-mobile-bar/
 
-**Use GitHub Codespaces**
+## Contact
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+- Phone: (760) 718-9157
+- Instagram: @mobile_bar_jess
 
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/1b72c280-d57d-4976-af96-4937bab75f7d) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+© 2025 Jess's Mobile Bar. All Rights Reserved.
