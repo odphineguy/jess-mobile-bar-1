@@ -1,47 +1,43 @@
 #!/bin/bash
 
-# Jess's Mobile Bar - Deployment Script
-echo "🚀 Deploying Jess's Mobile Bar to GitHub Pages..."
-
-# Check if we're in the right directory
-if [ ! -f "package.json" ]; then
-    echo "❌ Error: package.json not found. Please run this script from the project root."
-    exit 1
-fi
+echo "🚀 Deploying Jess's Mobile Bar Website"
+echo "====================================="
 
 # Build the project
-echo "📦 Building the project..."
-npm run build
+echo "📦 Building project..."
+npm run build:client
 
 if [ $? -ne 0 ]; then
-    echo "❌ Build failed. Please fix the errors and try again."
+    echo "❌ Build failed!"
     exit 1
 fi
 
-echo "✅ Build completed successfully!"
+echo "✅ Build successful!"
 
-# Check git status
-echo "📋 Checking git status..."
-git status
+# Switch to gh-pages branch
+echo "🌿 Switching to gh-pages branch..."
+git checkout gh-pages
 
-# Ask user if they want to commit and push
-read -p "Do you want to commit and push to GitHub? (y/n): " -n 1 -r
-echo
-if [[ $REPLY =~ ^[Yy]$ ]]; then
-    # Add all changes
-    echo "📝 Adding changes to git..."
-    git add .
-    
-    # Commit
-    echo "💾 Committing changes..."
-    git commit -m "Update website - $(date)"
-    
-    # Push
-    echo "🚀 Pushing to GitHub..."
-    git push origin main
-    
-    echo "✅ Deployment initiated! Check GitHub Actions for build status."
-    echo "🌐 Your site will be available at: https://yourusername.github.io/jess-mobile-bar-1/"
-else
-    echo "⏸️  Deployment cancelled."
-fi
+# Remove all files except .git
+echo "🧹 Cleaning branch..."
+git rm -rf . 2>/dev/null || true
+
+# Copy built files
+echo "📁 Copying built files..."
+cp -r dist/public/* .
+
+# Add and commit
+echo "📝 Committing changes..."
+git add .
+git commit -m "Deploy website - $(date)"
+
+# Push
+echo "🚀 Pushing to GitHub..."
+git push origin gh-pages
+
+# Switch back to main
+echo "🔄 Switching back to main..."
+git checkout main
+
+echo "✅ Deployment complete!"
+echo "🌐 Your site: https://odphineguy.github.io/jess-mobile-bar-1/"
