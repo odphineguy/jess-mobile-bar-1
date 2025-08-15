@@ -35,6 +35,15 @@ jobs:
     - name: Type check
       run: npm run check
       
+    - name: List files
+      run: ls -la
+      
+    - name: List client files
+      run: ls -la client/
+      
+    - name: List assets
+      run: ls -la attached_assets/
+      
     - name: Build
       run: npm run build:client
       
