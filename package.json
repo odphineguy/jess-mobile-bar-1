@@ -1,6 +1,7 @@
 {
-  "name": "rest-express",
+  "name": "jess-mobile-bar",
   "version": "1.0.0",
+  "description": "Jess's Mobile Bar - Premium mobile bartending services website",
   "type": "module",
   "license": "MIT",
   "scripts": {
