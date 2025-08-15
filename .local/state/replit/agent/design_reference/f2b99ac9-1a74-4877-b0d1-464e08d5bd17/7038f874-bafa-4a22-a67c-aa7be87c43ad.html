@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jess's Mobile Bar - Premium Mobile Bartending Services | Los Angeles, Orange County, Inland Empire</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-100': '#8B5FBF',
+                        'primary-200': '#61398F',
+                        'primary-300': '#FFFFFF',
+                        'accent-100': '#D6C6E1',
+                        'accent-200': '#9A73B5',
+                        'text-100': '#4A4A4A',
+                        'text-200': '#878787',
+                        'bg-100': '#F5F3F7',
+                        'bg-200': '#E9E4ED',
+                        'bg-300': '#FFFFFF'
+                    },
+                    fontFamily: {
+                        'primary': ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        };
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="font-primary text-text-100 bg-bg-300">
+    <!-- @COMPONENT: Header [Fixed navigation with logo and menu items] -->
+    <header class="fixed top-0 left-0 right-0 bg-bg-300/95 backdrop-blur-sm shadow-lg z-50">
+        <nav class="container mx-auto px-4 py-4 flex items-center justify-between">
+            <div class="flex items-center">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8/5+hHgAHggJ/PchI7wAAAABJRU5ErkJggg==" 
+                     alt="Jess's Mobile Bar Logo" 
+                     class="h-12 w-12 bg-primary-100 rounded-lg mr-3"
+                     data-implementation="Replace with provided logo: Jess_1753667449194.png">
+                <div>
+                    <h1 class="text-xl font-bold text-primary-200">Jess's Mobile Bar</h1>
+                    <p class="text-sm text-text-200">Premium Mobile Bartending</p>
+                </div>
+            </div>
+            
+            <!-- Desktop Navigation -->
+            <ul class="hidden md:flex space-x-8 text-sm font-medium">
+                <li><a href="#home" class="text-text-100 hover:text-primary-100 transition-colors">Home</a></li>
+                <li><a href="#about" class="text-text-100 hover:text-primary-100 transition-colors">About</a></li>
+                <li><a href="#services" class="text-text-100 hover:text-primary-100 transition-colors">Services</a></li>
+                <li><a href="#gallery" class="text-text-100 hover:text-primary-100 transition-colors">Gallery</a></li>
+                <li><a href="#contact" class="text-text-100 hover:text-primary-100 transition-colors">Contact</a></li>
+            </ul>
+            
+            <!-- Mobile Menu Button -->
+            <button class="md:hidden p-2" id="mobile-menu-btn">
+                <i class="fas fa-bars text-xl text-primary-100"></i>
+            </button>
+        </nav>
+        
+        <!-- Mobile Navigation -->
+        <div id="mobile-menu" class="md:hidden bg-bg-300 border-t border-bg-200 hidden">
+            <ul class="py-4 px-4 space-y-4">
+                <li><a href="#home" class="block text-text-100 hover:text-primary-100 transition-colors">Home</a></li>
+                <li><a href="#about" class="block text-text-100 hover:text-primary-100 transition-colors">About</a></li>
+                <li><a href="#services" class="block text-text-100 hover:text-primary-100 transition-colors">Services</a></li>
+                <li><a href="#gallery" class="block text-text-100 hover:text-primary-100 transition-colors">Gallery</a></li>
+                <li><a href="#contact" class="block text-text-100 hover:text-primary-100 transition-colors">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+    <!-- @END_COMPONENT: Header -->
+
+    <!-- @COMPONENT: Hero [Main banner with call-to-action] -->
+    <section id="home" class="relative min-h-screen flex items-center justify-center overflow-hidden">
+        <!-- Hero background image with mobile bar setup -->
+        <div class="absolute inset-0 bg-gradient-to-br from-primary-200/80 to-primary-100/60 z-10"></div>
+        <!-- Professional mobile bar setup at luxury event -->
+        <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&h=1080" 
+             alt="Elegant mobile bar setup at luxury event" 
+             class="absolute inset-0 w-full h-full object-cover">
+        
+        <div class="relative z-20 text-center text-white px-4 max-w-4xl">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+                AN EXPERIENCE THAT LEAVES YOU
+                <span class="block text-accent-100">THIRSTY FOR MORE</span>
+            </h1>
+            <p class="text-xl md:text-2xl mb-8 font-light">
+                Premium mobile bartending services across Los Angeles, Orange County & Inland Empire
+            </p>
+            <a href="#contact" 
+               class="inline-block bg-accent-100 hover:bg-accent-200 text-primary-200 font-semibold px-8 py-4 rounded-lg text-lg transition-all duration-300 transform hover:scale-105 shadow-lg">
+                READY TO WORK WITH US?
+            </a>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Hero -->
+
+    <!-- @COMPONENT: About [Where mixology and luxury meet section] -->
+    <section id="about" class="py-20 bg-bg-100">
+        <div class="container mx-auto px-4">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="order-2 lg:order-1">
+                    <!-- Professional bartender preparing cocktails -->
+                    <img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
+                         alt="Professional bartender crafting cocktails with precision" 
+                         class="rounded-xl shadow-lg w-full h-auto">
+                </div>
+                <div class="order-1 lg:order-2">
+                    <h2 class="text-4xl md:text-5xl font-bold text-primary-200 mb-6">
+                        WHERE MIXOLOGY AND LUXURY MEET
+                    </h2>
+                    <div class="space-y-6 text-lg text-text-100 leading-relaxed">
+                        <p>
+                            Here at <strong>Jess's Mobile Bar</strong>, we are all about the details.
+                        </p>
+                        <p>
+                            From handcrafted syrups and fresh garnishes to bringing everything needed to execute your cocktail menu with style and precision, we've got you covered.
+                        </p>
+                        <p>
+                            At Jess's Mobile Bar, customized service isn't just a buzzword, it's how we work. No two events are the same, which is why we build every package around you.
+                        </p>
+                        <p class="font-semibold text-primary-100">
+                            Your needs. Your style. Your guest list. Your flow.
+                        </p>
+                        <p>
+                            Whether you're looking for full-service bartending with all the essentials or a one-time consultation to elevate your in-house bar program, we bring expertise, creativity, and genuine care to every pour.
+                        </p>
+                    </div>
+                    
+                    <!-- Decorative divider -->
+                    <div class="my-8 flex justify-center lg:justify-start">
+                        <div class="w-32 h-1 bg-gradient-to-r from-primary-100 to-accent-100 rounded"></div>
+                    </div>
+                    
+                    <p class="text-center lg:text-left">
+                        <strong>Serving:</strong> Los Angeles • Orange County • Inland Empire
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: About -->
+
+    <!-- @COMPONENT: Services [Choose your experience section] -->
+    <section id="services" class="py-20 bg-bg-300">
+        <div class="container mx-auto px-4">
+            <!-- Luxury bar setup panoramic background -->
+            <div class="relative mb-16 rounded-xl overflow-hidden">
+                <img src="https://pixabay.com/get/g875605f9bb54505f0f867260f8575b3a7e04ce0c7d047d59a720e6377dea8878ae7ac6880172382e2cfd5ef15d094019856fa6253f2f0faa093a23d228613e78_1280.jpg" 
+                     alt="Luxury bar setup with premium spirits and glassware" 
+                     class="w-full h-64 object-cover">
+                <div class="absolute inset-0 bg-primary-200/70 flex items-center justify-center">
+                    <h2 class="text-4xl md:text-6xl font-bold text-white text-center">
+                        CHOOSE YOUR<br>
+                        <span class="text-accent-100">EXPERIENCE</span>
+                    </h2>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Consultation Services -->
+                <div class="bg-bg-100 rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="text-center mb-6">
+                        <i class="fas fa-lightbulb text-4xl text-primary-100 mb-4"></i>
+                        <h3 class="text-2xl font-bold text-primary-200">CONSULTATION SERVICES</h3>
+                    </div>
+                    <p class="text-text-100 mb-6 leading-relaxed">
+                        Expert advice to elevate your existing bar program. Menu development, staff training, and flow optimization to maximize your beverage service.
+                    </p>
+                    <a href="#contact" 
+                       class="block w-full bg-primary-100 hover:bg-primary-200 text-white font-semibold py-3 px-6 rounded-lg text-center transition-colors duration-300">
+                        Learn More
+                    </a>
+                </div>
+
+                <!-- BYOB Experience -->
+                <div class="bg-bg-100 rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="text-center mb-6">
+                        <i class="fas fa-cocktail text-4xl text-primary-100 mb-4"></i>
+                        <h3 class="text-2xl font-bold text-primary-200">SIGNATURE COCKTAIL EXPERIENCE (BYOB)</h3>
+                    </div>
+                    <p class="text-text-100 mb-6 leading-relaxed">
+                        You provide the spirits, we provide the expertise. Complete bar setup with professional bartending, premium mixers, and stunning presentation.
+                    </p>
+                    <a href="#contact" 
+                       class="block w-full bg-primary-100 hover:bg-primary-200 text-white font-semibold py-3 px-6 rounded-lg text-center transition-colors duration-300">
+                        Learn More
+                    </a>
+                </div>
+
+                <!-- Full Service -->
+                <div class="bg-bg-100 rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="text-center mb-6">
+                        <i class="fas fa-glass-cheers text-4xl text-primary-100 mb-4"></i>
+                        <h3 class="text-2xl font-bold text-primary-200">EXPERIENCE + LIQUOR & MIXERS</h3>
+                    </div>
+                    <p class="text-text-100 mb-6 leading-relaxed">
+                        The complete package. Premium spirits, professional bartending, full bar setup, and everything needed for an unforgettable experience.
+                    </p>
+                    <a href="#contact" 
+                       class="block w-full bg-primary-100 hover:bg-primary-200 text-white font-semibold py-3 px-6 rounded-lg text-center transition-colors duration-300">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Services -->
+
+    <!-- @COMPONENT: Gallery [Service showcase with Instagram placeholder] -->
+    <section id="gallery" class="py-20 bg-bg-200">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl md:text-5xl font-bold text-center text-primary-200 mb-16">
+                OUR WORK IN ACTION
+            </h2>
+            
+            <div class="grid md:grid-cols-3 gap-8 mb-12">
+                <!-- Event bartending setup -->
+                <div class="relative group overflow-hidden rounded-xl">
+                    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&h=600" 
+                         alt="Professional event bartending setup with elegant bar cart" 
+                         class="w-full h-96 object-cover group-hover:scale-110 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-primary-200/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <p class="text-white font-semibold text-lg">Event Bartending</p>
+                    </div>
+                </div>
+
+                <!-- Cocktail preparation artistry -->
+                <div class="relative group overflow-hidden rounded-xl">
+                    <img src="https://images.unsplash.com/photo-1536935338788-846bb9981813?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&h=600" 
+                         alt="Artisanal cocktail preparation with fresh garnishes and premium ingredients" 
+                         class="w-full h-96 object-cover group-hover:scale-110 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-primary-200/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <p class="text-white font-semibold text-lg">Cocktail Artistry</p>
+                    </div>
+                </div>
+
+                <!-- Luxury bar setup -->
+                <div class="relative group overflow-hidden rounded-xl">
+                    <img src="https://images.unsplash.com/photo-1470337458703-46ad1756a187?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&h=600" 
+                         alt="Luxury bar setup with premium spirits and sophisticated glassware" 
+                         class="w-full h-96 object-cover group-hover:scale-110 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-primary-200/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <p class="text-white font-semibold text-lg">Luxury Setup</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Instagram Integration Placeholder -->
+            <div class="text-center">
+                <p class="text-lg text-text-100 mb-6">
+                    Follow our journey and see more of our work on Instagram
+                </p>
+                <!-- @IMPLEMENTATION: Integrate Instagram feed from @mobile_bar_jess -->
+                <div class="bg-bg-300 rounded-xl p-8 shadow-lg" data-implementation="Instagram feed integration for @mobile_bar_jess">
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                        <!-- Instagram post placeholders -->
+                        <div class="aspect-square bg-accent-100 rounded-lg flex items-center justify-center">
+                            <i class="fab fa-instagram text-3xl text-primary-200"></i>
+                        </div>
+                        <div class="aspect-square bg-accent-100 rounded-lg flex items-center justify-center">
+                            <i class="fab fa-instagram text-3xl text-primary-200"></i>
+                        </div>
+                        <div class="aspect-square bg-accent-100 rounded-lg flex items-center justify-center">
+                            <i class="fab fa-instagram text-3xl text-primary-200"></i>
+                        </div>
+                        <div class="aspect-square bg-accent-100 rounded-lg flex items-center justify-center">
+                            <i class="fab fa-instagram text-3xl text-primary-200"></i>
+                        </div>
+                    </div>
+                    <p class="mt-4 text-text-200">Instagram feed will display here</p>
+                </div>
+                <a href="https://www.instagram.com/mobile_bar_jess" 
+                   target="_blank"
+                   class="inline-block mt-6 bg-primary-100 hover:bg-primary-200 text-white font-semibold px-8 py-3 rounded-lg transition-colors duration-300">
+                    <i class="fab fa-instagram mr-2"></i>
+                    Follow @mobile_bar_jess
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Gallery -->
+
+    <!-- @COMPONENT: About Jess [Meet the founder section] -->
+    <section class="py-20 bg-bg-300">
+        <div class="container mx-auto px-4">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="order-2 lg:order-1">
+                    <!-- Professional bartender portrait -->
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=800" 
+                             alt="Professional female bartender crafting signature cocktails" 
+                             class="rounded-xl shadow-lg w-full h-auto"
+                             data-implementation="Replace with actual photo of Jess from Instagram">
+                        <div class="absolute inset-0 bg-gradient-to-t from-primary-200/30 to-transparent rounded-xl"></div>
+                    </div>
+                </div>
+                <div class="order-1 lg:order-2">
+                    <h2 class="text-4xl md:text-5xl font-bold text-primary-200 mb-6">
+                        MEET<br>
+                        <span class="text-accent-200">JESS</span>
+                    </h2>
+                    <div class="space-y-6 text-lg text-text-100 leading-relaxed">
+                        <p>
+                            I didn't build Jess's Mobile Bar just to bartend.
+                        </p>
+                        <p>
+                            I built it because I believe gathering people around good drinks, good energy, and good storytelling is sacred work.
+                        </p>
+                        <p>
+                            With years of experience in the hospitality industry, I've worked every shift, worn every hat, and learned every lesson. I created Jess's Mobile Bar because I saw a gap: people wanted elevated bar experiences without the pretension, and they deserved a vendor who was as invested in the vibe as in the logistics.
+                        </p>
+                        <p>
+                            Whether it's a wedding, a corporate event, or a celebration, I bring the kind of hospitality that makes people feel seen. From the cocktails to the connections—everything I do is intentional.
+                        </p>
+                        <p class="font-semibold text-primary-100">
+                            I built this business with people in mind—my clients and every guest who walks up to the bar.
+                        </p>
+                        <p>
+                            The trust you place in me is never taken lightly. Whether it's a one-night celebration or ongoing service, I show up fully, pour with purpose, and lead with genuine care.
+                        </p>
+                        <p class="italic text-primary-200">
+                            I'm so happy you're here. Let's pour into something unforgettable.
+                        </p>
+                        <p class="font-script text-2xl text-primary-100">
+                            xoxo,<br>Jess
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: About Jess -->
+
+    <!-- @COMPONENT: Contact [Ready to mix up some magic section] -->
+    <section id="contact" class="py-20 bg-bg-100">
+        <div class="container mx-auto px-4">
+            <!-- Elegant cocktail event background -->
+            <div class="relative mb-16 rounded-xl overflow-hidden">
+                <img src="https://pixabay.com/get/ged44bade1c484fa0482c8441227b5c01848d5d33059933e6a456d52348a04d27a149a893481944a867af0c8ad0d0cc80939d042d1ce0c5e457ed2246fd82944e_1280.jpg" 
+                     alt="Elegant cocktail event with professionally crafted drinks" 
+                     class="w-full h-64 object-cover">
+                <div class="absolute inset-0 bg-primary-200/80 flex items-center justify-center">
+                    <div class="text-center text-white">
+                        <h2 class="text-4xl md:text-6xl font-bold mb-4">
+                            READY TO MIX UP<br>SOME MAGIC?
+                        </h2>
+                        <p class="text-xl md:text-2xl font-light">Let's talk!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12">
+                <!-- Contact Information -->
+                <div class="space-y-8">
+                    <div>
+                        <h3 class="text-2xl font-bold text-primary-200 mb-4">Get In Touch</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-center">
+                                <i class="fas fa-phone text-primary-100 text-xl mr-4"></i>
+                                <div>
+                                    <p class="font-semibold text-text-100">Phone</p>
+                                    <a href="tel:7607189157" class="text-primary-100 hover:text-primary-200 transition-colors">
+                                        (760) 718-9157
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-map-marker-alt text-primary-100 text-xl mr-4"></i>
+                                <div>
+                                    <p class="font-semibold text-text-100">Service Areas</p>
+                                    <p class="text-text-200">Los Angeles • Orange County • Inland Empire</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fab fa-instagram text-primary-100 text-xl mr-4"></i>
+                                <div>
+                                    <p class="font-semibold text-text-100">Follow Us</p>
+                                    <a href="https://www.instagram.com/mobile_bar_jess" 
+                                       target="_blank"
+                                       class="text-primary-100 hover:text-primary-200 transition-colors">
+                                        @mobile_bar_jess
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-bg-300 rounded-xl p-6 shadow-lg">
+                        <h4 class="text-xl font-bold text-primary-200 mb-4">Quick Actions</h4>
+                        <div class="space-y-3">
+                            <a href="tel:7607189157" 
+                               class="block w-full bg-primary-100 hover:bg-primary-200 text-white font-semibold py-3 px-6 rounded-lg text-center transition-colors duration-300">
+                                <i class="fas fa-phone mr-2"></i>
+                                Call Now
+                            </a>
+                            <a href="sms:7607189157" 
+                               class="block w-full bg-accent-200 hover:bg-primary-100 text-white font-semibold py-3 px-6 rounded-lg text-center transition-colors duration-300">
+                                <i class="fas fa-comment-sms mr-2"></i>
+                                Send Text
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="bg-bg-300 rounded-xl p-8 shadow-lg">
+                    <h3 class="text-2xl font-bold text-primary-200 mb-6">Request a Quote</h3>
+                    <form class="space-y-6" data-event="submit:handleContactForm">
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <div>
+                                <label for="firstName" class="block text-sm font-medium text-text-100 mb-2">First Name *</label>
+                                <input type="text" 
+                                       id="firstName" 
+                                       name="firstName" 
+                                       required
+                                       class="w-full px-4 py-3 border border-bg-200 rounded-lg focus:ring-2 focus:ring-primary-100 focus:border-transparent outline-none transition-all">
+                            </div>
+                            <div>
+                                <label for="lastName" class="block text-sm font-medium text-text-100 mb-2">Last Name *</label>
+                                <input type="text" 
+                                       id="lastName" 
+                                       name="lastName" 
+                                       required
+                                       class="w-full px-4 py-3 border border-bg-200 rounded-lg focus:ring-2 focus:ring-primary-100 focus:border-transparent outline-none transition-all">
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-text-100 mb-2">Email Address *</label>
+                            <input type="email" 
+                                   id="email" 
+                                   name="email" 
+                                   required
+                                   class="w-full px-4 py-3 border border-bg-200 rounded-lg focus:ring-2 focus:ring-primary-100 focus:border-transparent outline-none transition-all">
+                        </div>
+                        
+                        <div>
+                            <label for="phone" class="block text-sm font-medium text-text-100 mb-2">Phone Number</label>
+                            <input type="tel" 
+                                   id="phone" 
+                                   name="phone"
+                                   class="w-full px-4 py-3 border border-bg-200 rounded-lg focus:ring-2 focus:ring-primary-100 focus:border-transparent outline-none transition-all">
+                        </div>
+                        
+                        <div>
+                            <label for="eventDate" class="block text-sm font-medium text-text-100 mb-2">Event Date</label>
+                            <input type="date" 
+                                   id="eventDate" 
+                                   name="eventDate"
+                                   class="w-full px-4 py-3 border border-bg-200 rounded-lg focus:ring-2 focus:ring-primary-100 focus:border-transparent outline-none transition-all">
+                        </div>
+                        
+                        <div>
+                            <label for="location" class="block text-sm font-medium text-text-100 mb-2">Event Location</label>
+                            <select id="location" 
+                                    name="location"
+                                    class="w-full px-4 py-3 border border-bg-200 rounded-lg focus:ring-2 focus:ring-primary-100 focus:border-transparent outline-none transition-all">
+                                <option value="">Select Service Area</option>
+                                <option value="los-angeles">Los Angeles</option>
+                                <option value="orange-county">Orange County</option>
+                                <option value="inland-empire">Inland Empire</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <label for="serviceType" class="block text-sm font-medium text-text-100 mb-2">Service Type</label>
+                            <select id="serviceType" 
+                                    name="serviceType"
+                                    class="w-full px-4 py-3 border border-bg-200 rounded-lg focus:ring-2 focus:ring-primary-100 focus:border-transparent outline-none transition-all">
+                                <option value="">Select Service</option>
+                                <option value="consultation">Consultation Services</option>
+                                <option value="byob">BYOB Experience</option>
+                                <option value="full-service">Full Service Package</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-text-100 mb-2">Tell us about your event</label>
+                            <textarea id="message" 
+                                      name="message" 
+                                      rows="4"
+                                      placeholder="Event details, guest count, special requests..."
+                                      class="w-full px-4 py-3 border border-bg-200 rounded-lg focus:ring-2 focus:ring-primary-100 focus:border-transparent outline-none transition-all resize-none"></textarea>
+                        </div>
+                        
+                        <button type="submit" 
+                                class="w-full bg-primary-100 hover:bg-primary-200 text-white font-semibold py-4 px-6 rounded-lg transition-colors duration-300 transform hover:scale-105">
+                            Send Request
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Contact -->
+
+    <!-- @COMPONENT: Footer [Social links and quick info] -->
+    <footer class="bg-primary-200 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8/5+hHgAHggJ/PchI7wAAAABJRU5ErkJggg==" 
+                             alt="Jess's Mobile Bar Logo" 
+                             class="h-8 w-8 bg-accent-100 rounded mr-3"
+                             data-implementation="Replace with provided logo">
+                        <h3 class="text-xl font-bold">Jess's Mobile Bar</h3>
+                    </div>
+                    <p class="text-accent-100 mb-4">Premium mobile bartending services across Southern California.</p>
+                    <div class="flex space-x-4">
+                        <a href="https://www.instagram.com/mobile_bar_jess" 
+                           target="_blank"
+                           class="text-accent-100 hover:text-white transition-colors">
+                            <i class="fab fa-instagram text-2xl"></i>
+                        </a>
+                        <a href="tel:7607189157" 
+                           class="text-accent-100 hover:text-white transition-colors">
+                            <i class="fas fa-phone text-2xl"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-accent-100 hover:text-white transition-colors">Home</a></li>
+                        <li><a href="#about" class="text-accent-100 hover:text-white transition-colors">About</a></li>
+                        <li><a href="#services" class="text-accent-100 hover:text-white transition-colors">Services</a></li>
+                        <li><a href="#gallery" class="text-accent-100 hover:text-white transition-colors">Gallery</a></li>
+                        <li><a href="#contact" class="text-accent-100 hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact Info</h4>
+                    <div class="space-y-2 text-accent-100">
+                        <p><strong>Phone:</strong> (760) 718-9157</p>
+                        <p><strong>Service Areas:</strong></p>
+                        <ul class="text-sm space-y-1 ml-4">
+                            <li>• Los Angeles</li>
+                            <li>• Orange County</li>
+                            <li>• Inland Empire</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-accent-100/30 mt-8 pt-8 text-center text-accent-100">
+                <p>&copy; 2024 Jess's Mobile Bar. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- @END_COMPONENT: Footer -->
+
+    <script>
+        // TODO: Implement business logic, API calls, and state management
+        (function() {
+            // Mobile menu toggle
+            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            
+            if (mobileMenuBtn && mobileMenu) {
+                mobileMenuBtn.addEventListener('click', function() {
+                    mobileMenu.classList.toggle('hidden');
+                });
+            }
+            
+            // Smooth scrolling for anchor links
+            const anchorLinks = document.querySelectorAll('a[href^="#"]');
+            anchorLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        const headerHeight = 80;
+                        const targetPosition = target.offsetTop - headerHeight;
+                        window.scrollTo({
+                            top: targetPosition,
+                            behavior: 'smooth'
+                        });
+                    }
+                    // Close mobile menu if open
+                    if (mobileMenu && !mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                });
+            });
+            
+            // Form submission handler
+            const contactForm = document.querySelector('form[data-event="submit:handleContactForm"]');
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    // TODO: Implement form submission logic
+                    alert('Thank you for your inquiry! We will contact you soon.');
+                });
+            }
+        })();
+    </script>
+</body>
+</html>
