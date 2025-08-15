@@ -25,8 +25,8 @@ A modern, responsive website for Jess's Mobile Bar - premium mobile bartending s
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/jess-mobile-bar.git
-cd jess-mobile-bar
+git clone https://github.com/odphineguy/jess-mobile-bar-1.git
+cd jess-mobile-bar-1
 ```
 
 2. Install dependencies:
